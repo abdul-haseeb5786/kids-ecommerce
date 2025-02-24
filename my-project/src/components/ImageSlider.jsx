@@ -20,7 +20,7 @@ const ImageSlider = () => {
   }, [slides.length]);
 
   return (
-    <div className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[813px] overflow-hidden relative">
+    <div className="w-full h-[375px] sm:h-[450px] md:h-[400px] lg:h-[500px] xl:h-[650px] overflow-hidden relative">
       {slides.map((slide, index) => (
         <div
           key={index}

@@ -9,48 +9,6 @@ const Home = () => {
         <NavBar />
         <CategorySection />
         <ImageSlider />
-        <div className='text-red-500 text-9xl text-center'>
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-            hello from home page
-        </div>
         </div>
     );
 }
