@@ -24,21 +24,27 @@ const ImageSlider = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-transform duration-1000 ease-in-out ${
-            index === currentIndex
-              ? "translate-x-0 opacity-100"
-              : "translate-x-full opacity-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-[3000ms] ease-in-out transform ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"}`}
         >
           <img
             src={slide.img}
             alt={`Slide ${index + 1}`}
-            className={`w-full h-full object-cover transition-transform duration-1000 ease-out ${
-              index === currentIndex ? "scale-100" : "scale-110"
-            }`}
+            className="w-full h-full object-cover transition-none"
           />
         </div>
       ))}
+
+      {/* Navigation Dots */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {slides.map((_, index) => (
+          <span
+            key={index}
+            className={`w-3 h-3 rounded-full transition duration-500 ${
+              index === currentIndex ? "bg-white" : "bg-gray-400"
+            }`}
+          ></span>
+        ))}
+      </div>
     </div>
   );
 };
