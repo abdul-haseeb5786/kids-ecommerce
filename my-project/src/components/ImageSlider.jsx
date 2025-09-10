@@ -4,9 +4,9 @@ import pic2 from "../assets/pic2.png";
 
 const ImageSlider = () => {
   const slides = [
-    { img: pic1, url: "/link1" },
+    { img: pic2, url: "/link1" },
     { img: pic2, url: "/link2" },
-    { img: pic1, url: "/link3" },
+    { img: pic2, url: "/link3" },
     { img: pic2, url: "/link4" }
   ];
 
